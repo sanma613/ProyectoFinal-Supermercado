@@ -1,0 +1,185 @@
+/* General settings */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1F3F4;
+    font-family: 'Montserrat', sans-serif;
+    color: #343A40;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #1976D2;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.tagline {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* Main content styling */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Secciones en Grid */
+.section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Descripción */
+.descripcion__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.descripcion p {
+    max-width: 900px;
+    text-align: justify;
+    color: #555C6C;
+    font-size: 1.2em;
+}
+
+/* Marco Estratégico (Visión, Misión, Valores) */
+.marco-estrategico__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.marco-estrategico__wrapper h2 {
+    color: #1976D2;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.marco-estrategico__wrapper p {
+    color: #555C6C;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+/* Primera imagen: Matriz DOFA */
+.image-section {
+    text-align: center;
+}
+
+.image-section img {
+    width: 85%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Objetivos */
+.objetivos__wrapper {
+    background-color: #E3F2FD; /* Cambiado a un azul claro suave */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #FFC107; /* Mantengo el amarillo como acento */
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Colocamos los elementos en una columna */
+    align-items: center; /* Centramos los elementos horizontalmente */
+}
+
+.objetivos h2 {
+    color: #1976D2;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el objetivo general */
+.objetivo-general {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    background-color: #ffffff;
+    border: 1px solid #1976D2; /* Borde azul */
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%; /* Ancho completo */
+    max-width: 800px; /* Max ancho para evitar que se extienda demasiado */
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el objetivo general al pasar el mouse */
+.objetivo-general:hover {
+    background-color: #E3F2FD; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para el objetivo específico */
+.objetivos__list {
+    padding-left: 0; /* Sin padding a la izquierda */
+    width: 100%; /* Ancho completo */
+    max-width: 800px; /* Max ancho para evitar que se extienda demasiado */
+}
+
+.objetivo__item {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    background-color: #ffffff;
+    border: 1px solid #1976D2; /* Borde azul */
+    border-radius: 10px;
+    padding: 15px;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los elementos de la lista */
+.objetivo__item:hover {
+    background-color: #E3F2FD; /* Color de fondo al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #1976D2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    margin-top: 40px;
+}
