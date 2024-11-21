@@ -3,185 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <title>Blog Proyecto Final - Mercados Felipe</title>
+    <style>
+      .image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header class="bg-primary text-white text-center py-4">
       <h1>Mercados Felipe</h1>
       <p class="tagline">
         El supermercado de confianza para el bienestar de tu hogar
       </p>
     </header>
 
-    <main class="main-content">
-      <!-- Sección de descripción -->
-      <section class="section descripcion__wrapper">
-        <div class="descripcion">
-          <h2>Descripción</h2>
-          <p>
-            Nuestra empresa nació con el objetivo de brindar productos
-            alimenticios de alta calidad a precios accesibles para las familias
-            del barrio. Con el tiempo, nos hemos consolidado como el
-            supermercado líder en la zona, gracias a nuestra variedad de
-            productos esenciales y el compromiso con la satisfacción de nuestros
-            clientes. Hoy en día, seguimos siendo el punto de referencia en el
-            barrio, ofreciendo frescura, calidad y un servicio cercano.
-          </p>
-        </div>
-      </section>
-
-      <!-- Visión, Misión, Valores -->
-      <section class="section marco-estrategico__wrapper">
-        <div class="mision">
-          <h2>Misión</h2>
-          <p>
-            Mercados Felipe se dedica a ofrecer una amplia gama de productos
-            esenciales para el hogar, priorizando calidad, frescura y precios
-            accesibles. Se enfoca en proporcionar un solo lugar para satisfacer
-            las necesidades diarias, desde alimentos hasta productos de
-            limpieza.
-          </p>
-        </div>
-
-        <div class="vision">
-          <h2>Visión</h2>
-          <p>
-            Para 2025, Mercados Felipe aspira a ser el supermercado líder en
-            productos esenciales para el hogar, destacándose por su calidad,
-            variedad y satisfacción del cliente.
-          </p>
-        </div>
-
-        <div class="valores">
-          <h2>Valores</h2>
-          <p>
-            Vivimos la confianza como pilar fundamental en nuestras relaciones
-            con clientes y colaboradores. Nos impulsa la pasión por lo que
-            hacemos, garantizando un servicio excepcional.
-          </p>
-        </div>
-      </section>
-
-      <!-- Primera imagen: Matriz DOFA -->
-      <section class="section image-section">
-        <h2>Matriz DOFA</h2>
-        <img src="images/DOFA maria.jpg" alt="Matriz DOFA" class="image" />
-      </section>
-
-      <!-- Sección de Objetivos -->
-      <section class="section objetivos__wrapper">
-        <div class="objetivos">
-          <h2>Objetivos</h2>
-          <h3>Objetivo General</h3>
-          <div class="objetivo-general">
-            <p>
-              Consolidar a Mercados Felipe como el supermercado líder de la
-              comunidad, ofreciendo productos de calidad a precios accesibles, y
-              brindando un servicio que se ajuste a las necesidades y
-              expectativas de nuestros clientes.
-            </p>
-          </div>
-
-          <h3>Objetivos Específicos</h3>
-          <ul class="objetivos__list">
-            <li class="objetivo__item">
-              Optimizar la cadena de suministro para ofrecer siempre productos
-              frescos y de calidad.
-            </li>
-            <li class="objetivo__item">
-              Mejorar la experiencia del cliente con atención personalizada y
-              procesos más eficientes.
-            </li>
-            <li class="objetivo__item">
-              Promover prácticas sostenibles que respeten el medio ambiente y
-              las comunidades locales.
-            </li>
-            <li class="objetivo__item">
-              Expandir la oferta de productos para cubrir las nuevas necesidades
-              de los consumidores.
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Segunda imagen: Mapa de Procesos -->
-      <section class="section image-section">
-        <h2>Mapa de Procesos</h2>
-        <img
-          src="images/Presentación1.jpg"
-          alt="Mapa de Procesos"
-          class="image"
-        />
-      </section>
-
-      <!-- Tercera imagen -->
-      <section class="section image-section">
-        <h2>Diagrama Causa-Efecto</h2>
-        <img
-          src="images/Pescado Maria.jpg"
-          alt="Diagrama Causa-Efecto"
-          class="image"
-        />
-      </section>
-
-      <!-- Nueva imagen: Reglas de negocio -->
-      <section class="section image-section">
-        <h2>Reglas de Negocio</h2>
-        <img
-          src="images/Reglas de negocio.jpg"
-          alt="Reglas de Negocio"
-          class="image"
-        />
-      </section>
-
-      <!-- Nueva imagen: Diagrama de procesos actual -->
-      <section class="section image-section">
-        <h2>Diagrama de Procesos Actual</h2>
-        <img
-          src="images/Nuevo Modelo corregido.png"
-          alt="Diagrama de Procesos Actual"
-          class="image"
-        />
-      </section>
-
-      <!-- Nuevo párrafo: Modelo Verbal -->
-      <section class="section modelo-verbal__wrapper">
-        <h2>Modelo Verbal</h2>
-        <p>
-          El cliente tiene la escases de algún producto, se dirige al
-          SUPERMERCADO FELIPE, ubica el pasillo donde esta el producto de su
-          interés y lo toma, luego pasa a caja a registrar sus productos brinda
-          la información solicitada y sus productos serán empacados de la manera
-          correcta, le hacen la suma de sus productos y le dan el valor a pagar
-          tiene el derecho a elegir si desea pagar con efectivo o por medio de
-          su tarjeta, luego le registran su pago y por ultimo el cliente
-          terminara recibiendo su factura electrónica en su correo.
+    <main class="container my-5">
+      <!-- Introducción -->
+      <section id="descripcion" class="mb-5">
+        <h2 class="text-center mb-4">Descripción</h2>
+        <p class="text-justify">
+          Nuestra empresa nació con el objetivo de brindar productos
+          alimenticios de alta calidad a precios accesibles para las familias
+          del barrio. Con el tiempo, nos hemos consolidado como el supermercado
+          líder en la zona, gracias a nuestra variedad de productos esenciales y
+          el compromiso con la satisfacción de nuestros clientes.
         </p>
       </section>
 
-      <section class="section image-section">
-        <h2>Diccionario de datos</h2>
-        <img
-          src="images/1671121826_page-0001.jpg"
-          alt="Diccionario de datos"
-          class="image"
-        />
+      <!-- Visión, Misión, Valores -->
+      <section id="mision-vision-valores" class="mb-5">
+        <div class="row text-center">
+          <div class="col-md-4 mb-3">
+            <h3>Misión</h3>
+            <p>
+              Mercados Felipe se dedica a ofrecer una amplia gama de productos
+              esenciales para el hogar, priorizando calidad, frescura y precios
+              accesibles.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h3>Visión</h3>
+            <p>
+              Para 2025, Mercados Felipe aspira a ser el supermercado líder en
+              productos esenciales para el hogar, destacándose por calidad y
+              satisfacción del cliente.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h3>Valores</h3>
+            <p>
+              Vivimos la confianza como pilar fundamental en nuestras relaciones
+              con clientes y colaboradores.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <!-- Nueva imagen: Diagrama de procesos optimizado -->
-      <section class="section image-section">
-        <h2>Diagrama de Procesos Optimizado</h2>
-        <img
-          src="images/Nuevo Modelo 2 coregido.png"
-          alt="Diagrama de Procesos Optimizado"
-          class="image"
-        />
+      <!-- Sección de imágenes -->
+      <section id="imagenes" class="mb-5">
+        <h2 class="text-center mb-4">Imágenes y Diagramas</h2>
+
+        <div class="row text-center">
+          <div class="col-md-6 mb-4">
+            <h5>Matriz DOFA</h5>
+            <img
+              src="images/DOFA maria.jpg"
+              alt="Matriz DOFA"
+              class="image img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-bs-image="images/DOFA maria.jpg"
+            />
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5>Mapa de Procesos</h5>
+            <img
+              src="images/Presentación1.jpg"
+              alt="Mapa de Procesos"
+              class="image img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-bs-image="images/Presentación1.jpg"
+            />
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5>Diagrama Causa-Efecto</h5>
+            <img
+              src="images/Pescado Maria.jpg"
+              alt="Diagrama Causa-Efecto"
+              class="image img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-bs-image="images/Pescado Maria.jpg"
+            />
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5>Reglas de Negocio</h5>
+            <img
+              src="images/Reglas de negocio.jpg"
+              alt="Reglas de Negocio"
+              class="image img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-bs-image="images/Reglas de negocio.jpg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Modelo Verbal -->
+      <section id="modelo-verbal" class="mb-5">
+        <h2 class="text-center mb-4">Modelo Verbal</h2>
+        <p>
+          El cliente tiene la escasez de algún producto, se dirige al
+          SUPERMERCADO FELIPE, ubica el pasillo donde está el producto de su
+          interés y lo toma. Luego, pasa a caja a registrar sus productos,
+          brinda la información solicitada, y sus productos serán empacados de
+          la manera correcta. Le hacen la suma de sus productos y le dan el
+          valor a pagar. Tiene el derecho a elegir si desea pagar con efectivo o
+          por medio de su tarjeta. Finalmente, recibe su factura electrónica en
+          su correo.
+        </p>
+      </section>
+
+      <!-- Diccionario de datos -->
+      <section id="diccionario-datos" class="mb-5">
+        <h2 class="text-center mb-4">Diccionario de Datos</h2>
+        <div class="text-center">
+          <img
+            src="images/1671121826_page-0001.jpg"
+            alt="Diccionario de datos"
+            class="image img-fluid rounded shadow"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            data-bs-image="images/1671121826_page-0001.jpg"
+          />
+        </div>
+      </section>
+
+      <!-- Diagramas finales -->
+      <section id="diagramas-finales" class="mb-5">
+        <h2 class="text-center mb-4">Diagramas Finales</h2>
+        <div class="row text-center">
+          <div class="col-md-6 mb-4">
+            <h5>Diagrama de Procesos Actual</h5>
+            <img
+              src="images/Nuevo Modelo corregido.png"
+              alt="Diagrama de Procesos Actual"
+              class="image img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-bs-image="images/Nuevo Modelo corregido.png"
+            />
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5>Diagrama de Procesos Optimizado</h5>
+            <img
+              src="images/Nuevo Modelo 2 coregido.png"
+              alt="Diagrama de Procesos Optimizado"
+              class="image img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-bs-image="images/Nuevo Modelo 2 coregido.png"
+            />
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="text-center py-3 bg-dark text-white">
       <p>&copy; 2024 Mercados Felipe. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Vista ampliada</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="" alt="Ampliación" id="modalImage" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const imageModal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+
+      imageModal.addEventListener("show.bs.modal", (event) => {
+        const button = event.relatedTarget;
+        const imageUrl = button.getAttribute("data-bs-image");
+        modalImage.src = imageUrl;
+      });
+    </script>
   </body>
 </html>
